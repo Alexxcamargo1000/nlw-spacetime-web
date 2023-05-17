@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="grid min-h-screen grid-cols-2">
+    <main className="grid min-h-screen grid-cols-1 md:grid-cols-2 ">
       {/* Left */}
-      <div className="relative flex flex-col items-start justify-between overflow-hidden border-r border-white/10 bg-[url(../assets/bg-stars.svg)] bg-cover px-28 py-16">
+      <div className="relative flex flex-col items-start justify-between overflow-hidden border-r border-white/10 bg-[url(../assets/bg-stars.svg)] bg-cover px-16 py-16 md:px-28">
         <div className="pointer-events-none absolute right-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-1/2 rounded-full bg-purple-700 opacity-50 blur-full" />
         {/* Stripes */}
         <div className="absolute bottom-0 right-2 top-0 w-2 bg-stripes" />
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
 
         {/* Copyright */}
-        <div className="text-sm leading-relaxed text-gray-200">
+        <div className="w-full text-center text-sm leading-relaxed text-gray-200 md:text-start">
           Feito com 💜 no NLW da{' '}
           <a
             target="_blank"
@@ -61,7 +61,7 @@ export default function Home() {
       </div>
 
       {/* Right */}
-      <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16 ">
+      <div className="hidden flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16 md:flex ">
         <div className="flex flex-1 items-center justify-center">
           <p className="w-[360px] text-center leading-relaxed">
             Você ainda não registrou nenhuma lembrança, comece a{' '}

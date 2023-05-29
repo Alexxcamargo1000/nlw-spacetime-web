@@ -19,7 +19,7 @@ export function NewMemoryForm() {
 
     let coverUrl = ''
 
-    if (fileToUpload) {
+    if (fileToUpload !== null) {
       const uploadFormData = new FormData()
       uploadFormData.set('file', fileToUpload)
 
